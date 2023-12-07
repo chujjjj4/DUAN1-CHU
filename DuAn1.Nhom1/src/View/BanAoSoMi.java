@@ -136,11 +136,12 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         rdoBangCTDT.setSelected(true);
         rdoBangCTDT.setVisible(false);
         rdoBieuDoCTDT.setVisible(false);
+        rdoHD.setSelected(true);
+        rdoNV.setSelected(true);
         jLabel48.setVisible(false);
         updatekmHETHAN();
         btnAn.setVisible(false);
         jButton2.setVisible(false);
-        btnInHoaDon.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -439,6 +440,8 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         jScrollPane5.setViewportView(tblDSSP);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        container.setBackground(new java.awt.Color(255, 255, 255));
 
         menu.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -764,13 +767,13 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
+                .addContainerGap(23, Short.MAX_VALUE)
                 .addComponent(jLabel47)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        btnIn.setText("In Excel");
+        btnIn.setText("In Doanh thu ngày ");
         btnIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInActionPerformed(evt);
@@ -783,8 +786,8 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addComponent(btnIn, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
+                .addComponent(btnIn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(106, 106, 106)
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel16Layout.setVerticalGroup(
@@ -1133,9 +1136,10 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
                 .addGap(25, 25, 25)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnSuaTTSP))
+                        .addComponent(btnSuaTTSP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(698, 698, 698))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1150,7 +1154,7 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
                         .addComponent(rdoKichThuoc)
                         .addGap(18, 18, 18)
                         .addComponent(rdoTenLoaiSP)))
-                .addGap(0, 70, Short.MAX_VALUE))
+                .addGap(70, 70, 70))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2484,7 +2488,7 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
             }
         });
 
-        tblLichS.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Hóa đơn"));
+        tblLichS.setBorder(javax.swing.BorderFactory.createTitledBorder("Hóa đơn"));
         tblLichS.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
                 tblLichSAncestorAdded(evt);
@@ -2534,7 +2538,7 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
             tblLichSu.getColumnModel().getColumn(5).setResizable(false);
         }
 
-        jScrollPane11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Sản phẩm"));
+        jScrollPane11.setBorder(javax.swing.BorderFactory.createTitledBorder("Sản phẩm"));
 
         tblSanPhamLichSu.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -2566,7 +2570,7 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
             tblSanPhamLichSu.getColumnModel().getColumn(6).setResizable(false);
         }
 
-        jScrollPane12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Thông tin"));
+        jScrollPane12.setBorder(javax.swing.BorderFactory.createTitledBorder("Thông tin"));
 
         jLabel8.setText("Mã NV");
 
@@ -2734,6 +2738,8 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
 
         home.add(lichsu, "card8");
 
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+
         jPanel13.setBackground(new java.awt.Color(255, 51, 51));
 
         jLabel38.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
@@ -2893,6 +2899,7 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
+        jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel44.setText("Loại thời gian ");
 
         cbbLOAITHOIGIAN.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Theo ngày", "Hôm nay" }));
@@ -2902,8 +2909,10 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
             }
         });
 
+        ngaybatdau.setBackground(new java.awt.Color(255, 255, 255));
         ngaybatdau.setDateFormatString("yyyy-MM-dd");
 
+        ngayketthuc.setBackground(new java.awt.Color(255, 255, 255));
         ngayketthuc.setDateFormatString("yyyy-MM-dd");
 
         btnTIMLOAITIME.setText("Tìm");
@@ -3147,11 +3156,11 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
     private void btnThanhToanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThanhToanActionPerformed
         int check = JOptionPane.showConfirmDialog(this, "Bạn có muốn in hóa đơn ko", "Thanh toán", JOptionPane.YES_OPTION, JOptionPane.QUESTION_MESSAGE);
         if (check == JOptionPane.YES_OPTION) {
+            insertHoaDonChiTiet();
             MsgBox.alert(this, "Thanh toán và in hóa đơn thành công!");
-            insertHoaDonChiTiet();
         } else {
-            MsgBox.alert(this, "Thanh toán thành công!");
             insertHoaDonChiTiet();
+            MsgBox.alert(this, "Thanh toán thành công!");
         }
     }//GEN-LAST:event_btnThanhToanActionPerformed
 
@@ -3489,7 +3498,9 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         taikhoan.setVisible(true);
         nhanvien.setVisible(false);
         lichsu.setVisible(false);
-        stopWebCam();
+        if (webcam != null) { // Kiểm tra xem webcam đã được khởi tạo
+            stopWebCam();
+        }
     }//GEN-LAST:event_mnTKhoan1MouseClicked
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -3712,7 +3723,7 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
             String tenKH = txtTenKHLS.getText();
             String fileName = tenKH.isEmpty() ? "Unknown" : tenKH;
 
-            FileOutputStream out = new FileOutputStream(new File("D:\\" + fileName + ".pdf"));
+            FileOutputStream out = new FileOutputStream(new File("D:\\" + fileName + ".docx"));
 
             XWPFParagraph title = document.createParagraph();
             XWPFRun titleRun = title.createRun();
@@ -3744,10 +3755,10 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
             document.write(out);
             out.close();
 
-            JOptionPane.showMessageDialog(this, "Tạo hóa đơn thành công");
+//            JOptionPane.showMessageDialog(this, "Tạo hóa đơn thành công");
 
             // Mở tệp Word sau khi thông báo hiển thị
-            Desktop.getDesktop().open(new File("D:\\" + fileName + ".pdf"));
+            Desktop.getDesktop().open(new File("D:\\" + fileName + ".docx"));
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -4163,20 +4174,6 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
     }
 // /////////////////////////////////////san pham ///////////////////////////////////////////
 
-    private SanPham getForm() {
-        SanPham cd = new SanPham();
-        cd.setMaSp(txtMaCT.getText());
-        cd.setTenSp(txtTenSP.getText());
-        cd.setLoai(cbbLoaiSP.getSelectedItem().toString());
-        cd.setGia(Integer.parseInt(txtDonGia.getText()));
-        cd.setSoLuong(Integer.parseInt(txtSoLuong.getText()));
-        cd.setMauSac(cbbMauSac.getSelectedItem().toString());
-        cd.setSize(cbbKichThuoc.getSelectedItem().toString());
-        cd.setChatLieu(cbbChatLieuj.getSelectedItem().toString());
-
-        return cd;
-    }
-
     private void setForm(SanPham cd) {
         txtMaCT.setText(cd.getMaSp());
         txtTenSP.setText(cd.getTenSp());
@@ -4245,15 +4242,57 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         }
     }
 
+    private SanPham getForm() {
+        SanPham cd = null;
+
+        try {
+            String tenSp = txtTenSP.getText().trim();
+            String giaText = txtDonGia.getText().trim();
+            String soLuongText = txtSoLuong.getText().trim();
+
+            if (tenSp.isEmpty() && giaText.isEmpty() && soLuongText.isEmpty()) {
+                MsgBox.alert(this, "Vui lòng nhập đầy đủ thông tin.");
+            } else {
+                int gia = Integer.parseInt(giaText);
+                int soLuong = Integer.parseInt(soLuongText);
+
+                if (gia <= 0 || soLuong <= 0) {
+                    MsgBox.alert(this, "Đơn giá và số lượng phải lớn hơn 0.");
+                } else if (tenSp.isEmpty()) {
+                    MsgBox.alert(this, "Vui lòng nhập tên sản phẩm.");
+
+                } else {
+                    cd = new SanPham();
+                    cd.setMaSp(txtMaCT.getText());
+                    cd.setTenSp(tenSp);
+                    cd.setLoai(cbbLoaiSP.getSelectedItem().toString());
+                    cd.setGia(gia);
+                    cd.setSoLuong(soLuong);
+                    cd.setMauSac(cbbMauSac.getSelectedItem().toString());
+                    cd.setSize(cbbKichThuoc.getSelectedItem().toString());
+                    cd.setChatLieu(cbbChatLieuj.getSelectedItem().toString());
+                }
+            }
+        } catch (NumberFormatException e) {
+            MsgBox.alert(this, "Vui lòng nhập số cho đơn giá và số lượng.");
+        }
+
+        return cd;
+    }
+
     private void insert() {
         try {
             SanPham cd = getForm();
-            dao.insertIntoSanPhamAndSanPhamChiTiet(cd);
-            this.Table();
-            this.clearForm();
-            MsgBox.alert(this, "Thêm mới thành công!");
+            if (cd != null) {
+                dao.insertIntoSanPhamAndSanPhamChiTiet(cd);
+                MsgBox.alert(this, "Thêm mới thành công!");
+                this.Table();
+                this.clearForm();
+            }
+        } catch (NumberFormatException e) {
+            MsgBox.alert(this, "Vui lòng nhập số cho đơn giá và số lượng.");
         } catch (Exception e) {
-            e.printStackTrace(); // In ra lỗi để kiểm tra nguyên nhân
+            e.printStackTrace();
             MsgBox.alert(this, "Thêm mới thất bại! Lỗi: " + e.getMessage());
         }
     }
@@ -4261,13 +4300,17 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
     private void update() {
         try {
             SanPham cd = getForm();
-            dao.updateSanPhamAndSanPhamChiTiet(cd);
-            this.Table();
-            this.clearForm();
-            MsgBox.alert(this, "Thêm mới thành công!");
+            if (cd != null) {
+                dao.updateSanPhamAndSanPhamChiTiet(cd);
+                MsgBox.alert(this, "Cập nhật thành công!");
+                this.Table();
+                this.clearForm();
+            }
+        } catch (NumberFormatException e) {
+            MsgBox.alert(this, "Vui lòng nhập số cho đơn giá và số lượng.");
         } catch (Exception e) {
-            e.printStackTrace(); // In ra lỗi để kiểm tra nguyên nhân
-            MsgBox.alert(this, "Thêm mới thất bại! Lỗi: " + e.getMessage());
+            e.printStackTrace();
+            MsgBox.alert(this, "Cập nhật thất bại! Lỗi: " + e.getMessage());
         }
     }
 
@@ -4588,14 +4631,6 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
     }
 
     ///////////////////////////////////////////////////TÀI KHOẢN////////////////////////////////////////////////////////
-    private TaiKhoan getFormtk() {
-        TaiKhoan cd = new TaiKhoan();
-        cd.setMaNv(txtMaTk.getText());
-        cd.setMatKhau(txtMatKhau.getText());
-        cd.setVaiTro(rdoQL.isSelected()); // True nếu Quản lý, False nếu Nhân viên
-        return cd;
-    }
-
     private void setFormtk(TaiKhoan cd) {
         txtMaTk.setText(cd.getMaNv());
         txtMatKhau.setText(cd.getMatKhau());
@@ -4664,6 +4699,28 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         } else {
             System.out.println("Lỗi: tableSanPham là null.");
         }
+    }
+
+    private TaiKhoan getFormtk() throws Exception {
+        TaiKhoan cd = new TaiKhoan();
+
+        String maNv = txtMaTk.getText().trim();
+        if (!maNv.isEmpty()) {
+            cd.setMaNv(maNv);
+        } else {
+            throw new Exception("Vui lòng nhập mã nhân viên.");
+        }
+
+        String matKhau = txtMatKhau.getText().trim();
+        if (!matKhau.isEmpty()) {
+            cd.setMatKhau(matKhau);
+        } else {
+            throw new Exception("Vui lòng nhập mật khẩu.");
+        }
+
+        cd.setVaiTro(rdoQL.isSelected()); // True nếu Quản lý, False nếu Nhân viên
+
+        return cd;
     }
 
     private void inserttk() {
@@ -5028,22 +5085,6 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
     }
 
     //////////////////////////////////////// NHAN VIEN //////////////////////////////////////////////////////////////////
-    private NhanVien getFormnv() {
-        NhanVien cd = new NhanVien();
-        cd.setMaNV(txtMNV.getText());
-        cd.setHoTen(txtHOTEN.getText());
-        try {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-            Date parsedDate = dateFormat.parse(txtNGAYSINH.getText());
-            cd.setNgaySinh(parsedDate);
-        } catch (ParseException e) {
-            e.printStackTrace(); // Xử lý hoặc báo lỗi nếu có vấn đề trong quá trình chuyển đổi
-        }
-        cd.setDiaChi(txtDIACHI.getText());
-        cd.setEmail(txtEMAIL.getText());
-        return cd;
-    }
-
     private void setFormnv(NhanVien cd) {
         txtMNV.setText(cd.getMaNV());
         txtHOTEN.setText(cd.getHoTen());
@@ -5099,6 +5140,53 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         } else {
             System.out.println("Lỗi: tblNhanVien là null.");
         }
+    }
+
+    private NhanVien getFormnv() throws Exception {
+        NhanVien cd = new NhanVien();
+
+        String maNV = txtMNV.getText().trim();
+        if (!maNV.isEmpty()) {
+            cd.setMaNV(maNV);
+        } else {
+            throw new Exception("Vui lòng nhập mã nhân viên.");
+        }
+
+        String hoTen = txtHOTEN.getText().trim();
+        if (!hoTen.isEmpty()) {
+            cd.setHoTen(hoTen);
+        } else {
+            throw new Exception("Vui lòng nhập họ tên nhân viên.");
+        }
+
+        String ngaySinhText = txtNGAYSINH.getText().trim();
+        if (!ngaySinhText.isEmpty()) {
+            try {
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+                Date parsedDate = dateFormat.parse(ngaySinhText);
+                cd.setNgaySinh(parsedDate);
+            } catch (ParseException e) {
+                throw new Exception("Ngày sinh không hợp lệ. Nhập theo định dạng ngày-tháng-năm (dd-MM-yyyy).");
+            }
+        } else {
+            throw new Exception("Vui lòng nhập ngày sinh.");
+        }
+
+        String diaChi = txtDIACHI.getText().trim();
+        if (!diaChi.isEmpty()) {
+            cd.setDiaChi(diaChi);
+        } else {
+            throw new Exception("Vui lòng nhập địa chỉ nhân viên.");
+        }
+
+        String email = txtEMAIL.getText().trim();
+        if (!email.isEmpty()) {
+            cd.setEmail(email);
+        } else {
+            throw new Exception("Vui lòng nhập email nhân viên.");
+        }
+
+        return cd;
     }
 
     private void insertnv() {
@@ -5257,23 +5345,6 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
     }
 
     /////////////////////////////////////////////// KHUYẾN MẠI /////////////////////////////////////////////////
-    private Vourcher getFormkm() {
-        Vourcher cd = new Vourcher();
-        cd.setMaVourcher(Integer.parseInt(txtMAKM.getText()));
-        cd.setTenVoucher(txtTENKM.getText());
-        Date ngayBatDau = dateNgayBD.getDate();
-        Date ngayKetThuc = dateNgayKT.getDate();
-        if (ngayBatDau != null && ngayKetThuc != null && ngayBatDau.before(ngayKetThuc)) {
-            cd.setNgayBatDau(ngayBatDau);
-            cd.setNgayKetThuc(ngayKetThuc);
-        } else {
-            // Xử lý thông báo lỗi hoặc cập nhật UI để báo lỗi về ngày không hợp lệ
-        }
-        cd.setGiamGia(Integer.parseInt(txtGIAMGIA.getText()));
-        cd.setTrangThai(rdoHD.isSelected());
-        return cd;
-    }
-
     private void setFormkm(Vourcher cd) {
         txtMAKM.setText(String.valueOf(cd.getMaVourcher()));
         txtTENKM.setText(cd.getTenVoucher());
@@ -5357,6 +5428,53 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         } else {
             System.out.println("Lỗi: tblNhanVien là null.");
         }
+    }
+
+    private Vourcher getFormkm() throws Exception {
+        Vourcher cd = new Vourcher();
+
+        // Kiểm tra và thiết lập MaVourcher
+        String maVourcherText = txtMAKM.getText().trim();
+        if (!maVourcherText.isEmpty()) {
+            cd.setMaVourcher(Integer.parseInt(maVourcherText));
+        } else {
+            throw new Exception("Vui lòng nhập mã Voucher.");
+        }
+
+        // Kiểm tra và thiết lập TenVoucher
+        String tenVoucher = txtTENKM.getText().trim();
+        if (!tenVoucher.isEmpty()) {
+            cd.setTenVoucher(tenVoucher);
+        } else {
+            throw new Exception("Vui lòng nhập tên Voucher.");
+        }
+
+        // Kiểm tra và thiết lập NgayBatDau và NgayKetThuc
+        Date ngayBatDau = dateNgayBD.getDate();
+        Date ngayKetThuc = dateNgayKT.getDate();
+        if (ngayBatDau != null && ngayKetThuc != null && ngayBatDau.before(ngayKetThuc)) {
+            cd.setNgayBatDau(ngayBatDau);
+            cd.setNgayKetThuc(ngayKetThuc);
+        } else {
+            throw new Exception("Ngày bắt đầu phải bé hơn ngày kết thúc.");
+        }
+
+        // Kiểm tra và thiết lập GiamGia
+        String giamGiaText = txtGIAMGIA.getText().trim();
+        if (!giamGiaText.isEmpty()) {
+            int giamGia = Integer.parseInt(giamGiaText);
+            if (giamGia >= 0) {
+                cd.setGiamGia(giamGia);
+            } else {
+                throw new Exception("Giảm giá phải lớn hơn hoặc bằng 0.");
+            }
+        } else {
+            throw new Exception("Vui lòng nhập giảm giá.");
+        }
+
+        cd.setTrangThai(rdoHD.isSelected());
+
+        return cd;
     }
 
     private void insertkm() {
@@ -5505,30 +5623,44 @@ public class BanAoSoMi extends javax.swing.JFrame implements Runnable, ThreadFac
         txtGIAGIAMKHUYENMAI.setText(""); // Xóa hoặc đặt giá trị rỗng cho txtGIAGIAMKHUYENMAI
     }
 
-    private SanPham getFormkhuyenmai() {
+    private SanPham getFormkhuyenmai() throws Exception {
         SanPham cd = new SanPham();
-        cd.setLoaiKM(Integer.parseInt(txtMALOAI.getText()));
-        cd.setSale(Integer.parseInt(txtMAKHUYENMAI.getText())); // Lấy giá trị từ ô nhập liệu giảm giá
+
+        String loaiKMText = txtMALOAI.getText().trim();
+        if (!loaiKMText.isEmpty()) {
+            cd.setLoaiKM(Integer.parseInt(loaiKMText));
+        } else {
+            throw new Exception("Vui lòng nhập mã loại khuyến mãi.");
+        }
+
+        String saleText = txtMAKHUYENMAI.getText().trim();
+        if (!saleText.isEmpty()) {
+            cd.setSale(Integer.parseInt(saleText));
+        } else {
+            throw new Exception("Vui lòng nhập giá trị khuyến mãi.");
+        }
+
         return cd;
     }
 
     private void updateKhuyenMai() {
         try {
             SanPham cd = getFormkhuyenmai();
-            int loai = cd.getLoaiKM(); // Lấy thông tin loại khuyến mãi từ giao diện
-            int maKM = cd.getSale(); // Lấy thông tin mã khuyến mãi từ giao diện
-            dao.updateSanPhamByMaKM(loai, maKM); // Gọi phương thức cập nhật khuyến mãi trong DAO của bạn
-            // Các thao tác khác sau khi cập nhật thành công (nếu cần)
+            int loai = cd.getLoaiKM();
+            int maKM = cd.getSale();
+            dao.updateSanPhamByMaKM(loai, maKM);
             this.clearFormADKM();
             MsgBox.alert(this, "Cập nhật thành công!");
             this.fillTableDSSP(listAllSP);
+        } catch (NumberFormatException e) {
+            MsgBox.alert(this, "Vui lòng nhập số nguyên cho loại khuyến mãi và giá trị khuyến mãi.");
         } catch (Exception e) {
-            e.printStackTrace(); // Xử lý hoặc báo lỗi khi có lỗi xảy ra
+            e.printStackTrace();
             MsgBox.alert(this, "Cập nhật thất bại! Lỗi: " + e.getMessage());
         }
     }
-/////////////////////////////////////////// CÁC DOANH THU TRÊN CÙNG (4 CỤC MÀU) ///////////////////////////////////
 
+/////////////////////////////////////////// CÁC DOANH THU TRÊN CÙNG (4 CỤC MÀU) ///////////////////////////////////
     public void hienThiDoanhThu() {
         List<Integer> nam = doanhThu.getDoanhThuNam();
         int tongDoanhThuN = 0;

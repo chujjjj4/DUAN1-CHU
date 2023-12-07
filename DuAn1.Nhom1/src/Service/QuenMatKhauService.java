@@ -17,7 +17,7 @@ public class QuenMatKhauService {
     
     public boolean checkuser(String email){
         try {
-            String SQL="select * from nhanvien where email like ?";
+            String SQL="select * from nhanvien where Email like ?";
             Connection conn = Getconnection.getConnection();
             PreparedStatement sttm = conn.prepareStatement(SQL);
             
